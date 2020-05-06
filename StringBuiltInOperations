@@ -1,0 +1,27 @@
+#s,s1,s2 = string;
+#i,i1,i2 = integer;
+-->if contains or not<--
+code: s1.contains(s2);
+retruns boolen
+
+--> sub string <--
+code:s.substring(i1,i2); [i2>i1,i1>=0 & i1<string size,i2>=1 & i2<=string size]
+returns string
+
+--> index of a character or string <--
+code:s1.indexOf(s2);
+returns integer;
+
+--> to uppercase <--
+code:s1.toUpperCase();
+returns string
+
+--> to lowercase <--
+code:s1.toLowerCase();
+returns string
+
+--> string format<--
+String s1 = "Aref11";
+also 
+String s2 = String.format("Aref%d",11);
+s1 = s2;
