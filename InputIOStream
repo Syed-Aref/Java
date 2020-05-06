@@ -1,0 +1,15 @@
+//IO Stream//
+import java.io.*
+
+
+
+InputStreamReader r = new InputStreamReader(System.in);
+BufferedReader br = new BufferedReader(r);
+String s = br.readLine();
+
+
+//eof//
+while( (s=br.readLine()) != null )
+{
+
+}
