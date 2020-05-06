@@ -1,0 +1,14 @@
+//copying//
+# a = source,arr = destination
+Method 1:
+import java.util.Arrays;
+arr = Arrays.copyOf(a);
+Method 2:
+import java.util.Arrays;
+arr = Arrays.copyOfRange(a,i1,i2);
+i1,i2 = integers as in string.substring
+Method 3:
+System.arraycopy(a,i1,arr,i,i2);
+i1 = source starting index,i = destination starting index;i = ending starting index
+i1,i2 = as in string.substring
+**Be careful in index out of bounds error
