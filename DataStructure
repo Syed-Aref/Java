@@ -1,0 +1,67 @@
+#import java.util.*;
+//LinkedList//
+		 LinkedList<Integer> ill = new LinkedList<Integer>();
+		 ill.add(4);
+		 ill.add(56);
+		 System.out.println(ill);
+     *removeFirst(): This method removes and returns the first element from this list//
+     *removeLast(): This method removes and returns the last element from this list//
+//ArrayList//
+ArrayList<Integer> al = new ArrayList<Integer>();
+*Same methods of linkedlist are also applied here
+*Object[] al = al.toArray();
+//HashMap//
+		HashMap<Integer,Integer> hm = new HashMap<Integer,Integer>();
+		hm.put(1,9);
+		hm.put(5,8);
+		hm.put(2,5);
+		System.out.println(hm);
+		
+		for(Integer i : hm.keySet())
+		{
+			System.out.println( "Key: "+i+" & Value: "+ hm.get(i));
+		}
+		
+		/* for( KeyDataType variable : hm.keyset() )
+		 * {
+		 *   //variable = key;
+		 *   //hm.get(variable) returns value
+		 * }
+		 */
+//HashSet//
+        HashSet<Integer> hs1 = new HashSet<Integer>();
+        
+        hs1.add(10);
+        hs1.add(5);
+        hs1.add(10);
+        hs1.add(3);
+        hs1.add(3);
+        hs1.add(1);
+        System.out.println(hs1); 
+        
+        System.out.println("------------------");
+        
+        Iterator<Integer> iths1 = hs1.iterator();
+        while( iths1.hasNext() )
+        	System.out.println( iths1.next() );
+        
+        /*
+         * Iterator<data type> = HashSet<data type>
+         */
+//Basic comparator//
+        ArrayList<Integer> ali = new ArrayList<>();
+        ali.add(45);
+        ali.add(6);
+        ali.add(34);
+        ali.add(45);
+        ali.add(12);
+        Collections.sort(ali,new Comparator<Integer>() {
+        	public int compare(Integer a,Integer b) 
+            {
+        	    return b-a;
+            }
+        });
+        System.out.println(ali);
+        /* a-b -> ascending
+         * b-a -> descending */
+         
