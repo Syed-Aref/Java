@@ -12,3 +12,6 @@ System.arraycopy(a,i1,arr,i,i2);
 i1 = source starting index,i = destination starting index;i = ending starting index
 i1,i2 = as in string.substring
 **Be careful in index out of bounds error
+//String to character array from word input//
+char[] c = sc.next().toCharArray();
+
