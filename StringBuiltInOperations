@@ -25,3 +25,10 @@ String s1 = "Aref11";
 also 
 String s2 = String.format("Aref%d",11);
 s1 = s2;
+--> character array to string<--
+char[] c = {'u','u','u','t','h','t'};
+String s = String.valueOf(c);
+// s = uuutht //
+char[] c = {'a',' ','u','t','I','9'};
+String s = String.valueOf(c);
+// s = a utI9 //
