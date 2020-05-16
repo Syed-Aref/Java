@@ -4,12 +4,32 @@
 		 ill.add(4);
 		 ill.add(56);
 		 System.out.println(ill);
-     *removeFirst(): This method removes and returns the first element from this list//
-     *removeLast(): This method removes and returns the last element from this list//
+                 //removeFirst(): This method removes and returns the first element from this list//
+                 //removeLast(): This method removes and returns the last element from this list//
+		 /*
+                 Remove object: 
+                 -->For Integer:		
+                 LinkedList<Integer> ill = new LinkedList<Integer>();
+		 ill.add(4);
+		 ill.add(56);
+		 System.out.println(ill);
+		 ill.remove(new Integer(56));
+		 -->For String:
+		 LinkedList<String> sll = new LinkedList<String>();
+		 sll.add("kdfwk");
+		 sll.add("kwsk");
+		 sll.add("kwxxk");
+		 sll.add("kddwk");
+		 sll.remove("kwxxk");
+                 */
+		 Object[] a = ill.toArray();
+		 //list transformed into object array where each element is object//
 //ArrayList//
-ArrayList<Integer> al = new ArrayList<Integer>();
-*Same methods of linkedlist are also applied here
-*Object[] al = al.toArray();
+             ArrayList<Integer> al = new ArrayList<Integer>();
+             al.add(85);
+             al.add(67);
+             Object[] al = al.toArray();
+	     //list transformed into object array where each element is object//
 //HashMap//
 		HashMap<Integer,Integer> hm = new HashMap<Integer,Integer>();
 		hm.put(1,9);
