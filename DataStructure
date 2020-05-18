@@ -22,14 +22,23 @@
 		 sll.add("kddwk");
 		 sll.remove("kwxxk");
                  */
-		 Object[] a = ill.toArray();
+		 Transferring into object array
+		 Object[] a = ill.toArray();//Works in both//
 		 //list transformed into object array where each element is object//
+		 */
+		 /* 
+		 List copy://works in both//
+		 LinkedList<Integer> li1 = new LinkedList<Integer>();
+		 li1.add(98);
+		 ......
+		 ......
+		 LinkedList<Integer> li2 = new LinkedList<Integer>(li1);
+		 */
+		 
 //ArrayList//
              ArrayList<Integer> al = new ArrayList<Integer>();
              al.add(85);
              al.add(67);
-             Object[] al = al.toArray();
-	     //list transformed into object array where each element is object//
 //HashMap//
 		HashMap<Integer,Integer> hm = new HashMap<Integer,Integer>();
 		hm.put(1,9);
