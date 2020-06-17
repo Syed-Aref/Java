@@ -77,6 +77,9 @@
         /*
          * Iterator<data type> = HashSet<data type>
          */
+	 /*Retain function*/
+	 hs1.retainAll(hs2);[stores all the common elements between hs1 & hs2 and saves in hs1]
+	 
 //Basic comparator//
         ArrayList<Integer> ali = new ArrayList<>();
         ali.add(45);
