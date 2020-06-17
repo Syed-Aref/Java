@@ -1,0 +1,2 @@
+//integer to binary//
+String binOfx = Integer.toBinaryString(x);
