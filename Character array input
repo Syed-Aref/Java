@@ -1,0 +1,2 @@
+//String to character array from word input//
+char[] c = sc.next().toCharArray();
