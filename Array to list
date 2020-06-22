@@ -1,0 +1,2 @@
+int[] num = new int[10];
+List<Integer> linkList = new LinkedList<> (Arrays.asList(numbers));
