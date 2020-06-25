@@ -1,0 +1,8 @@
+n = any given integer number
+Method 1:
+int d;// number of digits in n = d
+d = (int)(Math.log10(n))+1;
+Method 2:
+int d;
+String sn = n+"";
+d = sn.length();
