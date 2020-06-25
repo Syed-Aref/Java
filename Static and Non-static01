@@ -36,7 +36,7 @@ i = 80
 ---*---
 i = 90
 90
--->Same variable 
+-->Same variable in main class and outside main class(non-static)
 public class NewClass {
 	int i = 90;
 	void methodA()
