@@ -1,0 +1,28 @@
+public class NewClass {
+	static int i = 90;
+	static void methodA()
+	{
+		System.out.println("i in methodA : "+i);
+	}
+	static void methodB(int x)
+	{
+		x-=2;
+		System.out.println("Integer in methodB : "+x);
+	}
+	public static void main(String[] args) {
+		methodB(i); //global varaiable can be passed as parameter
+		System.out.println("i is : " + i);
+		
+		int a = 62;
+		methodB(a);
+		System.out.println("a is : " + a);
+	}
+}
+
+Output:
+Integer in methodB : 88
+i is : 90
+Integer in methodB : 60
+a is : 62
+
+So,methods don't change the variables whose values are passed as parameter
