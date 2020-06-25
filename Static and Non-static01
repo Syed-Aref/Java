@@ -1,4 +1,5 @@
-Non-static Code1:
+**Using non-static variables and methods
+-->General code
 public class NewClass
 {
     int i = 90;
@@ -35,8 +36,33 @@ i = 80
 ---*---
 i = 90
 90
+-->Same variable 
+public class NewClass {
+	int i = 90;
+	void methodA()
+	{
+		System.out.println(i);
+	}
+	public static void main(String[] args) {
+		int i = 11;
+		System.out.println(i);
+		
+		NewClass n = new NewClass();
+		
+		System.out.println("i = "+n.i);
+		n.methodA();
+       
+        
+	}
+
+}
+Output:
+11
+i = 90
+90
 
 Using static variables and methods
+-->General code
 public class NewClass {
 	static int i = 90;
 	static void methodA()
@@ -67,7 +93,7 @@ i = 90
 ---*---
 i = 80
 80
-#There is no need of creating instatnce.However we can create instance but that will not bring back initial values
+-->There is no need of creating instatnce.However we can create instance but that will not bring back initial values
 public class NewClass {
 	static int i = 90;
 	static void methodA()
