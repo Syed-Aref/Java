@@ -1,0 +1,11 @@
+Method 1:
+System.out.pritf(".....");
+Method 2:
+System.out.pritf("...format1..format2..format3....formatN...",arg1,arg2,arg3,..,argN); //arg = argument
+
+Format for any Integer: %d
+Format for any Decimal: %f
+Format for any Character: %c
+Format for any String: %s / %S 
+## %s-->general use.Arguement: Aref,Output:Aref
+   %S-->Capitalization.Arguement: Aref,Output:AREF
