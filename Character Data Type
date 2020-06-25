@@ -1,7 +1,7 @@
 ->Java follows unicode(2 bytes = 16 bits)
 ->Index: 0 to ((2^16)-1)
 ->Besides index is also based on hexa decimal format('\u0000' to '\uffff')
-->ASCII code(7 bit) and Extended ASCII code(8 bit) are subset of unicode
+->ASCII code(7 bit) and Extended ASCII code(8 bit) are subsets of unicode
 ->Default vale: '\u0000'(NULL Character)
 ->System.out.println('\u00a5');// Output:The character at index '\u00a5'
 ->Character to Integer
