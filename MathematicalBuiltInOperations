@@ -17,4 +17,4 @@
 ->Math.PI;// returns 3.141592653589793 //
 // logarthm//
 ->Math.log( d );// d>=1,function: log base e,returns f //
-->Math.log10( d );// d>=1,function: log base e,returns f //
+->Math.log10( d );// d>=1,function: log base 10,returns f //
