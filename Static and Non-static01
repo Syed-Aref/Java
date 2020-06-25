@@ -1,0 +1,107 @@
+Non-static Code1:
+public class NewClass
+{
+    int i = 90;
+    void methodA()
+	{
+		System.out.println(i);
+	}
+	public static void main(String[] args) 
+    {
+        //System.out.println("i = "+i);--> Error
+	    NewClass n = new NewClass();
+	    System.out.println("i = "+n.i);  
+        //methodA(); --> Error
+        n.methodA();
+        System.out.println("---*---");
+        
+        n.i-=10;
+        System.out.println("i = "+n.i);
+        n.methodA();
+        System.out.println("---*---"); 
+        //Creating another instance where we can get back the initial value
+        NewClass n1 = new NewClass();
+        System.out.println("i = "+n1.i);
+		n1.methodA();
+        
+    }
+}
+Output:
+i = 90
+90
+---*---
+i = 80
+80
+---*---
+i = 90
+90
+
+Using static variables and methods
+public class NewClass {
+	static int i = 90;
+	static void methodA()
+	{
+		System.out.println(i);
+	}
+	public static void main(String[] args) {
+		System.out.println("i = "+i);
+		methodA();
+        System.out.println("---*---");
+        
+        i-=10;
+        System.out.println("i = "+i);
+        methodA();
+        /*
+        System.out.println("---*---");
+        NewClass n1 = new NewClass();
+        System.out.println("i = "+n1.i);
+		n1.methodA();
+		*/
+        
+	}
+
+}
+Output:
+i = 90
+90
+---*---
+i = 80
+80
+#There is no need of creating instatnce.However we can create instance but that will not bring back initial values
+public class NewClass {
+	static int i = 90;
+	static void methodA()
+	{
+		System.out.println(i);
+	}
+	public static void main(String[] args) {
+		System.out.println("i = "+i);
+		methodA();
+        System.out.println("---*---");
+        
+        i-=10;
+        System.out.println("i = "+i);
+        methodA();
+        /*
+        System.out.println("---*---");
+        NewClass n1 = new NewClass();
+        System.out.println("i = "+n1.i);
+		n1.methodA();
+		*/
+        System.out.println("---*---");
+        NewClass n = new NewClass();
+        System.out.println("i = "+n.i);
+		n.methodA();
+        
+	}
+
+}
+Output:
+i = 90
+90
+---*---
+i = 80
+80
+---*---
+i = 80
+80
