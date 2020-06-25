@@ -6,11 +6,11 @@ arr = Arrays.copyOf(a);
 Method 2:
 import java.util.Arrays;
 arr = Arrays.copyOfRange(a,i1,i2);
-i1,i2 = integers as in string.substring
+i1,i2 = integers as in String.substring(index1,index2)
 Method 3:
 System.arraycopy(a,i1,arr,i,i2);
-i1 = source starting index,i = destination starting index;i = ending starting index
-i1,i2 = as in string.substring
-**Be careful in index out of bounds error
+i1 = source starting index,i = destination starting index,i2 = sorce ending index
+i1,i2 = as in String.substring(index1,index2)
+**Be careful of index out of bounds error
 
 
