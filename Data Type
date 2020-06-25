@@ -1,0 +1,9 @@
+Byte: Memory:1 byte, default value:0, coding form:byte
+Short: Memory:2 byte, default value:0, coding form:short
+Integer: Memory:4 byte, default value:0, coding form:int
+Long: Memory:8 byte, default value:0/0L/0l, coding form:long
+Float: Memory:, default value:0.0f/0.0F, coding form:float
+Double: Memory:, default value:0.0/0.0D/0.0d, coding form:double
+Character: Memory:2 byte, default value:'\u0000', coding form:char
+Boolean: Memory:1 byte, default value:false, coding form:boolean
+String: Memory:, default value:null, coding form:String
