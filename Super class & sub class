@@ -1,0 +1,52 @@
+public class SuperClass
+{
+	public int methodAdd(int x, int y) 
+	{
+	   	return x + y;
+	}
+}
+
+public class SubClassForMrthodSqr extends SuperClass
+{
+	int MethodSqr(int x) 
+	{
+		return x * x ;
+	}
+}
+
+
+public class SubClassForMrthodCub extends SuperClass
+{
+	int MethodCub(int x) 
+	{
+		return x * x * x;
+	}
+}
+
+
+public class Main {
+	public static void main(String[] args) 
+	{
+		SubClassForMrthodSqr sqr = new SubClassForMrthodSqr();
+		SubClassForMrthodCub cub = new SubClassForMrthodCub();
+		System.out.println(cub.methodAdd(7,8));
+		System.out.println(cub.MethodCub(7));
+		System.out.println(sqr.methodAdd(9,10));
+		System.out.println(sqr.MethodSqr(9));
+	}	
+}
+
+
+Output:
+15
+343
+19
+81
+
+
+
+So, class SubClassForMrthodSqr and class SubClassForMrthodCub inherited all the properties of class SuperClass
+SuperClass -> Super class
+SubClassForMrthodSqr -> Sub class
+SubClassForMrthodCub -> Sub class
+
