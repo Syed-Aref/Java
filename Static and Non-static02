@@ -1,0 +1,38 @@
+public class NewClass {
+	static int i = 90;
+	static void methodA()
+	{
+		System.out.println(i);
+	}
+	public static void main(String[] args) {
+		System.out.println("i = "+i);
+		methodA();
+        System.out.println("---*---");
+        i-=10;
+        System.out.println("i = "+i);
+        methodA();
+        System.out.println("---*---");
+        int i = 11;
+        //From now on i will refer to the integer variable created in line 11 not the static variable in line 3
+        System.out.println("i = "+i);
+        methodA();
+        System.out.println("---*---");
+        //To get back static variable integer variable i now we need to create instance
+        NewClass n = new NewClass();
+        System.out.println("i = "+n.i);
+		n.methodA();
+    }
+}   
+
+Output:
+i = 90
+90
+---*---
+i = 80
+80
+---*---
+i = 11
+80
+---*---
+i = 80
+80
