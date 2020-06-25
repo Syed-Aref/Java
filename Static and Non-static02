@@ -40,7 +40,7 @@ i = 80
 
 
 
--->static class in non-static method
+-->static variable in non-static method
 public class NewClass {
 	static int i = 90;
 	static void methodA()
