@@ -1,0 +1,17 @@
+    int row = sc.nextInt();
+		int col = sc.nextInt();
+		int[][] a = new int[row][col];
+    //a.length = row;
+    //a[0].length = col;
+    3Exemple
+    		int dynArr[][] = {
+				  //            COLUMNS:  Col:1(0)  Col:2(1)   Col:3(2)            ROWS:   //   
+				                        {       12,       19,        9},          //Row no:1(0)
+				                        {        2,       22,       -2},          //Row no:2(1)
+				                        {       56,       89,        0},          //Row no:3(2)
+				                        {       47,       89,       67},          //Row no:4(3)
+				                        {       10,       30,       50}           //Row no:5(4)
+				                      };  
+
+row = 5[dynArr.length]
+col = 3[dynArr[0].length]
