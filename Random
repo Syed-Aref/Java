@@ -1,0 +1,9 @@
+import java.util.Random;
+Random random = new Random();
+
+for random integer:
+random.nextInt(); //Similar to scannner class
+
+random.nextInt() --> returns any value form -(2^31) to ((2^31)-1)
+
+random.nextInt(7) --> returns any value form 0 to 6(7-1)
