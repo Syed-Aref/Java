@@ -20,3 +20,16 @@
          */
 	 /*Retain function*/
 	 hs1.retainAll(hs2);[stores all the common elements between hs1 & hs2 and saves in hs1]
+
+//Tree set
+import java.util.*;
+public class TreeSetJava {
+	public static void main(String[] args) {
+		TreeSet<Integer> it1 = new TreeSet<Integer>();
+		it1.add(89);
+		it1.add(45);
+		it1.add(60);
+		System.out.println(it1);
+	}
+}	
+	 
