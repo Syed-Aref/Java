@@ -1,0 +1,31 @@
+public class JavaMethodOverload
+{
+  static int square(int x)
+  {
+    return x*x;
+  }
+  /*static int square(int a) --> wrong
+  {
+    return a*a;
+  }
+ 
+  static long square(int x) --> wrong
+  {
+    return x*x;
+  }
+  */
+   --> square(integer int_var) has already been taken, even if the return type is different
+  static int square(double y)
+  {
+    return (int)y*(int)y;
+  }
+  static int square(float y)
+  {
+    return (int)y*(int)y;
+  }
+  public static void main(String[] args)
+  {
+    System.out.println( square(4) );
+    System.out.println( square(4.89) );
+  }
+}
