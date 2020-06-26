@@ -1,0 +1,40 @@
+//Copy//
+(**)List,Vector,set can copy each other
+Ex:
+-->Code
+import java.util.*;
+public class Copy {
+	public static void main(String[] args) {
+		Vector<Integer> vi = new Vector<Integer>(10,99);
+		vi.add(4);
+		vi.add(6);
+		LinkedList<Integer> ill = new LinkedList<Integer>(vi);
+		ill.add(56);
+		System.out.println("Vector: "+vi);
+		System.out.println("List: "+ill);
+	}
+}
+-->Output
+Vector: [4, 6]
+List: [4, 6, 56]
+-->Code
+        HashSet<Integer> hs1 = new HashSet<Integer>();
+        hs1.add(10);
+        hs1.add(5);
+        hs1.add(10);
+        hs1.add(3);
+        hs1.add(3);
+        hs1.add(1);
+        LinkedList<Integer> ill01 = new LinkedList<Integer>(hs1);
+        ill01.add(100);
+	System.out.println("Set: "+hs1);
+	System.out.println("List: "+ill01);
+-->Output
+Set: [1, 3, 5, 10]
+List: [1, 3, 5, 10, 100]
+So,
+DS TYPE01<Data type x> a = new DS TYPE01<Data type x>(a1);
+DS TYPE01 a = any ds type
+a1 = any ds type
+data type x = has to be same for a and a1
+Memory of a != Memory of a1
