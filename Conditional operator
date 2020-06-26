@@ -1,0 +1,10 @@
+int i = sc.nextInt();
+String s;
+// if-else condition
+if(i<18)
+  s = "Below 18";
+else
+  s = "Adult";
+// conditional operator
+s = i<18 ? "Below 18" : "Adult";
+// if condition i<18 is true s = "Below 18" else s = "Adult"
