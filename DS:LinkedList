@@ -1,0 +1,43 @@
+#import java.util.*;
+//LinkedList//
+		 LinkedList<Integer> ill = new LinkedList<Integer>();
+		 ill.add(4);
+		 ill.add(56);
+		 System.out.println(ill);
+                 //removeFirst(): This method removes and returns the first element from this list//
+                 //removeLast(): This method removes and returns the last element from this list//
+		 /*
+                 Remove object: 
+                 -->For Integer:		
+                 LinkedList<Integer> ill = new LinkedList<Integer>();
+		 ill.add(4);
+		 ill.add(56);
+		 System.out.println(ill);
+		 ill.remove(new Integer(56));
+		 -->For String:
+		 LinkedList<String> sll = new LinkedList<String>();
+		 sll.add("kdfwk");
+		 sll.add("kwsk");
+		 sll.add("kwxxk");
+		 sll.add("kddwk");
+		 sll.remove("kwxxk");
+                 */
+		 Transferring into object array
+		 Object[] a = ill.toArray();//Works in both//
+		 //list transformed into object array where each element is object//
+		 */
+		 /* 
+		 List copy:
+		 LinkedList<Integer> li1 = new LinkedList<Integer>();
+		 li1.add(98);
+		 ......
+		 ......
+		 LinkedList<Integer> li2 = new LinkedList<Integer>(li1);
+		 */
+		 
+
+
+		 */
+
+	 
+
