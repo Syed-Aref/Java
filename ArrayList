@@ -1,0 +1,19 @@
+//ArrayList//
+             ArrayList<Integer> al = new ArrayList<Integer>();
+             al.add(85);
+             al.add(67);
+1.Adding Elements:
+add(Object): 
+add(int index, Object): [ 0<=index<=size]
+
+2. set(index,obj):[0<=index<=size-1]
+
+3. Removing Elements: 
+remove(Object): 
+remove(int index): [0<=index<size]
+4.clear();
+5.contains(Object o);
+6.get(int index);[0<=index<size]
+7.indexOf(Object O);
+8.isEmpty;()
+9.toArray(Object[] O)
