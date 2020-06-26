@@ -14,3 +14,31 @@
         System.out.println(ali);
         /* a-b -> ascending
          * b-a -> descending */
+//COMPARATOR FOR OBJECT         
+class PAIR
+{
+	int value,times;
+	public PAIR(int v,int t) 
+	{
+		value = v;
+		times = t;
+	}
+}
+
+LinkedList<PAIR> p = new LinkedList<PAIR>();
+.................   .................
+.................   .................
+.................   .................
+  Adding elements on linkedlist
+.................   .................
+.................   .................
+.................   .................
+Sort accoding to only times variable of a PAIR object( in descending order)
+Collections.sort(p,new Comparator<PAIR>(){
+			public int compare(PAIR p1,PAIR p2) 
+			{
+				return p2.times - p1.times;
+			}
+		});
+                
+                
