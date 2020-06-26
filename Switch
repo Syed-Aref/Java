@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class SwitchLearning01
+{
+
+  public static void main(String[] args)
+  {
+    Scanner sc = new Scanner(System.in);
+    int in = sc.nextInt();
+    final int i1 = 10;
+    final int i2 = 15;
+    final int i3 = 20;
+    switch(in)
+    {
+      case i1:
+      case i2:
+        System.out.println("Nearly perfect");
+        break;
+      case i3:
+        System.out.println("perfect");
+        break;
+      default:
+        System.out.println("not in range");
+        break;
+    }
+  }
+}
+
+#Switch case only works for integer and enumeration
+  
