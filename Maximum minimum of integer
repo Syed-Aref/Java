@@ -1,0 +1,2 @@
+int i_max = Integer.MAX_VALUE; // i_max = (2^31) - 1
+int i_min = Integer.MIN_VALUE; // i_min = -(2^31) 
