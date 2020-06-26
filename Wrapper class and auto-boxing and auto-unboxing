@@ -1,0 +1,19 @@
+Wrapper class: is a class that allows to store primitive data as object
+
+prirmitive data --------> Corresponding wrapper class
+int                       Integer
+double                    Double
+long                      Long
+char                      Charcter
+String                    String
+
+Auto-boxing
+1.General variable
+Integer myInt = 8;
+2.Aarray
+Integer[] myIntArr = new Integer[10];
+myIntArr[0] = 8;
+
+Auto-unboxing
+int value1 = myInt;
+int value2 = myIntArr[0];
