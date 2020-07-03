@@ -17,17 +17,17 @@ Char b = 'c';
 a-b = index of 'A' - index of 'c' = 65 -99 = -34//
 int i = b-a;//i = -34//
 int j = 'B' - 'A';//B->66,A->65.So, j = 66-65 = 1//
-index of numeric characters start from 47.
-Index 47 corresponds character value 47.
-Similiarly,48->1,49->2,50->3,...,56->9
+index of numeric characters start from 48.
+Index 48 corresponds character value at index 48 which is '0'
+Similiarly,49->'1',50->'2',51->'3',...,57->'9'
 To transform character '6' to integer 6:
 char c = '6';
-int i = c -'0';
+int i = char c - 48;
 To transform an index to its correspending character value in a character
 char c = (ch)(69);//Index 69 = E.So, c = 'E'//
 To transform any digit to character:
 int i = 2;
-char c = (char)(i+47);//Ind 49 corresponds '2'.So,c = '2'//
+char c = (char)(i+48);//Ind 50 corresponds '2'.So,c = '2'//
 
 
 String to integer;
