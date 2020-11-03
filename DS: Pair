@@ -1,9 +1,0 @@
-import javafx.util.Pair; 
-public class PiarInJava {
-	public static void main(String[] args) {
-		Pair<Integer,Integer > p;
-		p = new Pair<Integer,Integer >(69,69);
-		System.out.println(p.getKey());
-		System.out.println(p.getValue());
-	}
-}
