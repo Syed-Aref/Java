@@ -12,8 +12,8 @@ Integer to Long: long l = (long)(i);//Any integer//
 Long to Integer: int i = (int)(l);//l has to be from -(2^31) to (2^31)-1//
 **Character conversation**
 Character - Character gives number
-Char a = 'A';
-Char b = 'c';
+char a = 'A';
+char b = 'c';
 a-b = index of 'A' - index of 'c' = 65 -99 = -34//
 int i = b-a;//i = -34//
 int j = 'B' - 'A';//B->66,A->65.So, j = 66-65 = 1//
@@ -30,7 +30,7 @@ int i = 2;
 char c = (char)(i+48);//Ind 50 corresponds '2'.So,c = '2'//
 
 
-String to integer;
+String to integer:
 String s = "8748";
 int i = Integer.parseInt(s);
 /* 
@@ -44,3 +44,9 @@ Double d = Double.parseDouble(s);
 
 NOTE:Wrong symbols will cause error
 s = "4898sd09" or "388.44.4" or "094j84.4" and similar to these will cause error
+
+integer to String:
+i->integer,d->double,c->char
+String str1 = Integer.toString(i);
+ ...  str2 = Double.toString(d);
+ ...  str3 = Character.toString(c);
