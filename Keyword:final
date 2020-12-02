@@ -1,2 +1,0 @@
-final int i = 10;
-//i += 2; --> wrong statement
