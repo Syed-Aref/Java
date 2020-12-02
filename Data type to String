@@ -1,4 +1,0 @@
-i->integer,d->double,c->char
-String str1 = Integer.toString(i);
-  ...  str2 = Double.toString(d);
-  ...  str3 = Character.toString(c);
