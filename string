@@ -1,28 +1,30 @@
-#s,s1,s2 = string;
-#i,i1,i2 = integer;
--->if contains or not<--
-code: s1.contains(s2);
-retruns boolen
 
---> sub string <--
-code:s.substring(i1,i2); [i2>i1,i1>=0 & i1<string size,i2>=1 & i2<=string size]
-returns string
 
---> index of a character or string <--
-code:s1.indexOf(s2);
-returns integer;
 
---> to uppercase <--
-code:s1.toUpperCase();
-returns string
+public class StringMethods {
 
---> to lowercase <--
-code:s1.toLowerCase();
-returns string
-
---> string format<--
-String s1 = "Aref11";
-also 
-String s2 = String.format("Aref%d",11);
-//s1 = s2;
-
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "Syed Aref Ahmed";
+		
+		
+		System.out.println( s.indexOf("ef") ); 
+		System.out.println( s.indexOf("e") ); // 'e' could also be used
+		// If the given string is found it returns the first occurance
+		// of the string else returns -1
+		
+		
+		
+		String s_ = "Syed ";
+		
+		System.out.println( s.equals(s_) );
+		System.out.println( s.equals("Syed Aref Ahmed") );
+		System.out.println( s_.equals(s) );
+		// If s is the same string as s_( or vice verse) it returns true else it returns false
+		
+		System.out.println( s.toUpperCase() ); // returns "SYED AREF AHMED"
+		System.out.println( s.toLowerCase() ); // returns "syed aref ahmed"
+		System.out.println(s); // However, s = Syed Aref Ahmed
+		
+	}
+}
