@@ -9,3 +9,51 @@ Format for any Character: %c
 Format for any String: %s / %S 
 ## %s-->general use.Arguement: Aref,Output:Aref
    %S-->Capitalization.Arguement: Aref,Output:AREF
+Example code:
+public class PrintFormat {
+
+    public static void main(String[] args) {
+        int x = 78;
+        System.out.printf("%d\n",x);
+        System.out.printf("%d\n",67);
+
+        System.out.printf("%5d\n",67);
+        /*
+        Occupies first 5 places
+        _____
+        Then starts putting data from backward
+        ___67
+
+         */
+        System.out.printf("%5d\n",6576834);
+        /*
+        Occupies first 5 places
+        _____
+        Then starts putting data from backwards , but since the length
+        is greater than the occupied data will shift to right
+        6579834
+         */
+
+        System.out.printf("%-5d*\n",67);
+        /*
+        Sets data first
+        67
+        Occupies remaining spaces
+        67___
+
+         */
+        System.out.printf("%-5d*\n",6576834);
+        /*
+        Sets data first
+        6576834
+        Occupies remaining spaces,but as the length of data is bigger than
+        the places that were set to be booked,no further places will
+        be occupied
+         */
+         
+         double d = 89.45;
+         System.out.printf("%.3f\n",d);
+         ///89.450
+        
+    }
+}
