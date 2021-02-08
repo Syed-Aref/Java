@@ -17,6 +17,9 @@ public class PrintFormat {
         System.out.printf("%d\n",x);
         System.out.printf("%d\n",67);
 
+
+
+        /// Right justified
         System.out.printf("%5d\n",67);
         /*
         Occupies first 5 places
@@ -34,6 +37,8 @@ public class PrintFormat {
         6579834
          */
 
+
+        // Left justified
         System.out.printf("%-5d*\n",67);
         /*
         Sets data first
@@ -49,11 +54,24 @@ public class PrintFormat {
         Occupies remaining spaces,but as the length of data is bigger than
         the places that were set to be booked,no further places will
         be occupied
+
          */
-         
-         double d = 89.45;
-         System.out.printf("%.3f\n",d);
-         ///89.450
-        
+        double d = 89.45;
+        System.out.printf("%.3f\n",d);
+        ///89.450
+
+        System.out.printf("%8.3f\n",d);
+        ///__89.450
+
+        /*
+        Rules:same as for integer
+         */
+
+        System.out.printf("%c\n",'t');
+        System.out.printf("%s\n","UIO");
+
+        /*
+        Rules for left justified , right justified : same as integer
+         */
     }
 }
