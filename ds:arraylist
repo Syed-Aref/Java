@@ -29,3 +29,4 @@ remove(int index); /// O(N)
 
 9.toArray(Object[] O); /// O(N)
 
+//Example 1 : https://ideone.com/PxIuMf
