@@ -5,7 +5,7 @@ al.add(67);
 
 1.Adding Elements:
 add(Object); /// O(1)
-add(int index, Object); /// O(N)
+add(index,Object); /// O(N)
 /// [ 0<=index<=size-1]
 
 2. set(index,element); /// O(1)
@@ -13,20 +13,20 @@ add(int index, Object); /// O(N)
 
 3. Removing Elements: 
 remove(Object); /// O(N)
-remove(int index); /// O(N)
+remove(index); /// O(N)
 /// [0<=index<size]
 
 4.clear(); /// O(1)
 
-5.contains(Object o); /// O(N)
+5.contains(Object); /// O(N)
 
-6.get(int index); /// O(1)
+6.get(index); /// O(1)
 ///[0<=index<=size-1]
 
-7.indexOf(Object O); /// O(N)
+7.indexOf(Object); /// O(N)
 
 8.isEmpty; /// O(1) 
 
-9.toArray(Object[] O); /// O(N)
+9.toArray(Object[]); /// O(N)
 
 //Example 1 : https://ideone.com/PxIuMf
