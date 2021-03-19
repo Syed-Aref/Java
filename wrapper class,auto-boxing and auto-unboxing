@@ -7,13 +7,21 @@ long                      Long
 char                      Charcter
 String                    String
 
+
+int a = 7;
+Integer a1 = new Integer(7);
+
 Auto-boxing
-1.General variable
+(*)
 Integer myInt = 8;
-2.Aarray
+(*)
 Integer[] myIntArr = new Integer[10];
 myIntArr[0] = 8;
 
 Auto-unboxing
+(*)
 int value1 = myInt;
+(*)
 int value2 = myIntArr[0];
+(*)
+int value3 = 4;
