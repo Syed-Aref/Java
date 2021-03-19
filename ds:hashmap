@@ -1,18 +1,19 @@
+import java.util.Scanner;
+import  java.util.HashMap;
+public class Rough {
+    public static void main(String[] args) {
+        HashMap<Integer,Integer> hm = new HashMap<Integer,Integer>();
 
-//HashMap//
-		HashMap<Integer,Integer> hm = new HashMap<Integer,Integer>();
-		hm.put(1,9);
-		hm.put(5,8);
-		hm.put(2,5);
-		System.out.println(hm);
-		
-		for(Integer i : hm.keySet())
-		{
-			System.out.println( "Key: "+i+" & Value: "+ hm.get(i));
-		}
-		
-		/* for( KeyDataType variable : hm.keyset() )
-		 * {
-		 *   //variable = key;
-		 *   //hm.get(variable) returns value
-		 * }
+        hm.put(5,6); /// hm.get(5) = 6
+        System.out.println(hm.get(5));
+
+        hm.put(5,10); /// hm.get(5) = 10 now
+        System.out.println(hm.get(5));
+
+        System.out.println(hm.get(9)); /// hm.get(9) = null(default value)
+        for(Integer i : hm.keySet())
+        {
+            System.out.println( "Key: "+i+" & Value: "+ hm.get(i));
+        }
+    }
+}
