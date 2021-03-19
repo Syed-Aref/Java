@@ -1,35 +1,47 @@
-//HashSet//
+
+
+import java.util.*;
+
+public class Rough {
+    public static void main(String[] args) {
         HashSet<Integer> hs1 = new HashSet<Integer>();
-        
         hs1.add(10);
         hs1.add(5);
         hs1.add(10);
         hs1.add(3);
         hs1.add(3);
         hs1.add(1);
-        System.out.println(hs1); 
-        
-        System.out.println("------------------");
-        
-        Iterator<Integer> iths1 = hs1.iterator();
-        while( iths1.hasNext() )
-        	System.out.println( iths1.next() );
-        
-        /*
-         * Iterator<data type> = HashSet<data type>
-         */
-	 /*Retain function*/
-	 hs1.retainAll(hs2);[stores all the common elements between hs1 & hs2 and saves in hs1]
+        hs1.add(78);
+        hs1.add(56);
+        hs1.add(23);
 
-//Tree set
-import java.util.*;
-public class TreeSetJava {
-	public static void main(String[] args) {
-		TreeSet<Integer> it1 = new TreeSet<Integer>();
-		it1.add(89);
-		it1.add(45);
-		it1.add(60);
-		System.out.println(it1);
-	}
-}	
-	 
+        Iterator<Integer> it = hs1.iterator();
+        while( it.hasNext() ) {
+            System.out.print(it.next()+" ");
+        }
+        System.out.println();
+        /*
+        Stores in random order
+         */
+
+        TreeSet<Integer> ts1 = new TreeSet<Integer>();
+        ts1.add(10);
+        ts1.add(5);
+        ts1.add(10);
+        ts1.add(3);
+        ts1.add(3);
+        ts1.add(1);
+        ts1.add(78);
+        ts1.add(56);
+        ts1.add(23);
+
+        it = ts1.iterator();
+        while( it.hasNext() ) {
+            System.out.print(it.next()+" ");
+        }
+        System.out.println();
+        /*
+        Stores in ascending order
+         */
+    }
+}
