@@ -1,52 +1,68 @@
 Float/Double to Integer:int i = (int)(67.89);/*Output: 67*/
-/*
 Also,
 int i;
 i = (int)67.89;
 double d = 98.45;
 i = (int)d;
 i = (int)(d);
-*/
+==============================================================================
+
+
 Float/Double to Long:long l = (long)(567.89);
+==============================================================================
+
 Integer to Long: long l = (long)(i);//Any integer//
+==============================================================================
+
 Long to Integer: int i = (int)(l);//l has to be from -(2^31) to (2^31)-1//
-**Character conversation**
-Character - Character gives number
+==============================================================================
+
+Character conversation
+Character - Character = gives number
 char a = 'A';
 char b = 'c';
+
 a-b = index of 'A' - index of 'c' = 65 -99 = -34//
 int i = b-a;//i = -34//
 int j = 'B' - 'A';//B->66,A->65.So, j = 66-65 = 1//
+
 index of numeric characters start from 48.
 Index 48 corresponds character value at index 48 which is '0'
 Similiarly,49->'1',50->'2',51->'3',...,57->'9'
+
 To transform character '6' to integer 6:
 char c = '6';
 int i = char c - 48;
+
 To transform an index to its correspending character value in a character
 char c = (ch)(69);//Index 69 = E.So, c = 'E'//
+
 To transform any digit to character:
 int i = 2;
 char c = (char)(i+48);//Ind 50 corresponds '2'.So,c = '2'//
+==============================================================================
 
-
-String to integer:
+String to integer
 String s = "8748";
 int i = Integer.parseInt(s);
 /* 
 i = 8748
 but only works with in integer( -(2^31) to (2^31)-1 ) or will cause runtime error
 */
+
 s = "378734384"
 long l = Long.parseLong(s);//Similarly runtime error may cause if exceeds the range//
+
 s = "983893.0390";
 Double d = Double.parseDouble(s);
 
 NOTE:Wrong symbols will cause error
 s = "4898sd09" or "388.44.4" or "094j84.4" and similar to these will cause error
+==============================================================================
 
-integer to String:
+Numeric values to String:
 i->integer,d->double,c->char
 String str1 = Integer.toString(i);
  ...  str2 = Double.toString(d);
  ...  str3 = Character.toString(c);
+==============================================================================
