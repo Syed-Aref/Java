@@ -17,7 +17,7 @@ class PAIR
 }
 
 
-public class Rough {
+public class ComparatorExample1 {
     public static void main(String[] args) {
         ArrayList<Integer> ali = new ArrayList<>();
         ali.add(45);
